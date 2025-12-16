@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .marquee {
+    position: fixed;
+    top: 80%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+  
+  .fixed-button {
+    font-family: 'proxima-nova', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      //padding: 12px 35px;
+      border-radius: 0;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    display: block;
+    margin-left: -45%;
+    padding: 8px 20px;
+    background-color: #ff1100;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transform: rotate(90deg);
+  }
+  
+  .fixed-button:hover {
+    background-color: #e23529;
+  }
+  @keyframes marquee {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+  }
+  @media (max-width: 768px) {
+    .fixed-button {
+      width: 100%;
+      font-size: 14px; /* Adjust font size for smaller screens */
+      padding: 12px; /* Increase padding for easier touch interaction */
+    }
+    
+  }
+  
+    
+  

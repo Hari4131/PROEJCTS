@@ -1,0 +1,785 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <a routerLink="/homepage" class="logo me-auto"><img src="assets/img/logo.png" style="width:200px;height:110px;"
+          alt=""></a>
+    </div>
+    <div class="col-md-6 h-25 mt-5 d-flex h-2" id="srchDiv">
+    </div>
+    <div class="col-md-3 mt-3" id="socialIcon" style="line-height: 1.3;">
+      <span style="font-size: 14px;font-weight:600">Helpline No</span> &nbsp;<i
+        class="bi bi-telephone-fill"></i>&nbsp;<span
+        style="color:#157fda;font-size: 14px;font-weight:600">080-26590420/080-42506500</span><br />
+      <span style="font-size: 14px;font-weight:600">Chat with us</span>&nbsp;<i class="bi bi-chat-fill"></i>&nbsp;<span
+        style="color:#157fda;font-size: 10px;font-weight:600"><span onclick="toggle_visibility()"
+          style="background-color: #fff;border:none;color:#157fda;font-size: 14px;font-weight:600;cursor: pointer;">Need
+          Help ?</span></span><br />
+      <span style="font-size: 14px;font-weight:600">Write to us</span>&nbsp;&nbsp;&nbsp;<i
+        class="bi bi-envelope-fill"></i>&nbsp;<span
+        style="color:#157fda;font-size: 14px;font-weight:600">enquiry@medetel.in</span><br />
+      <div class="socialIcon">
+        <!-- <blink>
+            Download App
+        </blink> -->
+        <span style="font-size: 14px;font-weight:600">Follow us on</span>&nbsp;<i class="bi bi-person-plus-fill"
+          style="font-size:18px;"></i>
+        
+          <a href="https://www.facebook.com/people/Medetel-Health/100095503840120/"  target="_blank">
+            <img src="assets/img/face.jpg"alt="" height="20" width="20" style="margin-left: 10px !important;">
+          </a>
+        <a href="https://twitter.com/medetel_health"   target="_blank" style="background-color: #fffdfd;">
+          <img style="margin-left: 8px;" src="assets/img/twitlo.png" alt="" height="20" width="20">
+        </a>
+  
+  <a href="https://www.youtube.com/@medetelhealth"  target="_blank" style="background-color: #ffffff;">
+    <img style="margin-left: 8px;" src="assets/img/youtube-play.png" alt="" height="20" width="20">
+  </a>
+
+  <a href="https://www.instagram.com/accounts/login/?next=%2Fmedetel_health%2F&source=desktop_nav/medetel_health" target="_blank" style="background-color: #ffffff;">
+    <img style="margin-left: 8px;" src="assets/img/instagram-new.png" alt="" height="20" width="20">
+  </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======= Header ======= -->
+
+<!-- demo.esdifra.com -->
+ <header id="header" class="fixed-top">
+  <div class="container-fluid d-flex align-items-center">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto " routerLink="/homepage">Home</a></li>
+
+        <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Services</span><i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+             <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Specialities</span><i
+                  class="bi bi-chevron-right"></i></a>
+              <ul id="childUl">
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="refreshpage()">Cardiology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="page()">Dentistry</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="dermatologist()">Dermatology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="gastroentrologist()">Gastroenterology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="Gynecology()">Gynecology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="nephrologist()">Nephrology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="hepatologist()">Hepatology (Liver)</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="orthopaedic()">Orthopedic</a>
+
+
+                <li class="dropdown"><a id="myBtn">Cardiology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Cardiology is a branch of medicine that deals
+                        with disorders of the heart and the cardiovascular system. The field includes medical diagnosis
+                        and treatment of congenital<span id="dots">...</span><span id="more"> heart defects, coronary
+                          artery disease, heart failure, valvular heart disease and electrophysiology. Physicians who
+                          specialize in this field of medicine are called cardiologists.<br>
+                          Medetel Health has partnered with top cardiologist and cardiology hospitals in Karnataka and
+                          across India to provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore()" id="readMore">Read more</p>
+                     <button class="cardBtn"  (click)="refreshpage()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown"><a id="myBtn">Dentistry<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Dentistry, also known as dental medicine and oral
+                        medicine, is the branch of medicine focused on the teeth, gums, and mouth.<span
+                          id="dots2">...</span><span id="more2">
+                          It consists of the study, diagnosis, prevention, management, and treatment of diseases,
+                          disorders, and conditions of the mouth, most commonly focused on dentition (the development
+                          and arrangement of teeth) as well as the oral mucosa. The practitioner is called a dentist.
+                          <br>Medetel Health has partnered with top dentists and dental clinics in Karnataka and across
+                          India to provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore2()" id="readMore2">Read more</p>
+                      <a routerLink="/dentist"><button class="cardBtn" (click)="page()">Click Here >></button></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Dermatology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">The skin is the largest organ of the body, which
+                        acts as a barrier to protect the internal organs from injury and bacteria Dermatology involves
+                        the study, research, diagnosis, and<span id="dots3">...</span><span id="more3">
+                          management of any health conditions that may affect the skin, fat hair, nails, and membranes.
+                          A dermatologist is the health professional who specializes in this area of healthcare.
+                          <br>Medetel Health has partnered with top dermatologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore3()" id="readMore3">Read more</p>
+                     <button class="cardBtn" (click)="dermatologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Gastroenterology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Gastroenterology is the study of the normal
+                        function and diseases of the esophagus, stomach, small intestine, colon and rectum, pancreas,
+                        gallbladder, bile ducts and liver.<span id="dots4">...</span><span id="more4">
+                          It involves a detailed understanding of the normal action (physiology) of the gastrointestinal
+                          organs including the movement of material through the stomach and intestine (motility), the
+                          digestion and absorption of nutrients into the body, removal of waste from the system, and the
+                          function of the liver as a digestive organ.
+                          <br>Medetel Health has partnered with top gastroenterologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore4()" id="readMore4">Read more</p>
+                     <button class="cardBtn" (click)="gastroentrologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Gynecology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Gynecology is the area of medicine that involves
+                        the treatment of women's diseases, especially those of the reproductive organs. It is often
+                        paired with the field of obstetrics, forming <span id="dots5">...</span><span id="more5">
+                          the combined area of obstetrics and gynecology
+                          <br>Medetel Health has partnered with top gynecologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore5()" id="readMore5">Read more</p>
+                      <button class="cardBtn" (click)="Gynecology()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Nephrology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Nephrology is the branch of medicine that deals
+                        with the physiology and diseases of the kidneys. Nephrology is a specialty of adult internal
+                        medicine and pediatric medicine<span id="dots6">...</span><span id="more6">
+                          that concerns the study of the kidneys, specifically normal kidney function (renal physiology)
+                          and kidney disease (renal pathophysiology), the preservation of kidney health, and the
+                          treatment of kidney disease,
+                          <br>Medetel Health has partnered with top nephrologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore6()" id="readMore6">Read more</p>
+                          <button class="cardBtn"  (click)="nephrologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Hepatology (Liver)<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Hepatology is the branch of medicine that
+                        incorporates the study of liver, gallbladder, biliary tree, and pancreas as well as management
+                        of their disorders. Although traditionally<span id="dots7">...</span><span id="more7">
+                          considered a sub-specialty of gastroenterology, rapid expansion has led in some countries to
+                          doctors specializing solely on this area, who are called hepatologists.
+                          <br>Medetel Health has partnered with top Hepatologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore7()" id="readMore7">Read more</p>
+                     <button class="cardBtn"  (click)="hepatologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Orthopedic<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Orthopedics is the branch of surgery concerned
+                        with conditions involving the musculoskeletal system. Orthopedic surgeons use both surgical and
+                        nonsurgical means<span id="dots8">...</span><span id="more8">
+                          to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases,
+                          infections, tumors, and congenital disorders.
+                          <br>Medetel Health has partnered with top orthopedics in Karnataka and across India to provide
+                          quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore8()" id="readMore8">Read more</p>
+                    <button class="cardBtn" (click)="orthopaedic()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a routerLink="/clinicalservices">Clinical services</a></li>
+            <li><a routerLink="/wellness">Wellness</a></li>
+            <li><a routerLink="/homecare">Home care</a></li>
+            <li><a routerLink="/healthpackages">Health Checkup Packages </a></li>
+            <li><a routerLink="/lab_test_packackes">Micro-scopic-Lab kit </a></li>
+
+          </ul>
+        </li>
+
+        <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Register</span></a>
+          <ul>
+            <li><a href="https://portal.medetel.in/#/auth/register">Patient</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-doctor">Doctor</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-clinic">Clinic</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-hospital">Hospital</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-speciality-hospital">Speciality hospital</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/homecare">Home Care</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-pharmacy">Pharmacy</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/wellness">Wellness</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-diagnostic-lab">Diagnostic lab</a></li>
+          </ul>
+        </li>&nbsp;
+        <span style="color:#fff;margin-top:-4px;margin-left:-2px;">|</span>
+        <li id="loginl" class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Login</span><i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="https://portal.medetel.in/#/auth/login">Patient</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-doctor">Doctor</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-clinic">Clinic</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-hospital">Hospital</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-speciality-hospital">Speciality hospital</a></li>
+            <li><a routerLink="/homecare">Home Care</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-pharmacy">Pharmacy</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/">Wellness</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-diagnostic-lab">Diagnostic lab</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" routerLink="/consultnow">Consult now</a></li>
+        <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Book an appointment</span> <i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li class="dropdown"><a style="color:#fff;cursor: pointer;">Doctor <i class="bi bi-chevron-right"></i></a>
+              <ul id="childUl">
+                <li><a routerLink="/cardiologist">Cardiologist</a></li>
+                <li><a routerLink="/dentist">Dentist</a></li>
+                <li><a routerLink="/dermatologist">Dermatologist</a></li>
+                <li><a routerLink="/gastroentrologist">Gastroenterologist </a></li>
+                <li><a routerLink="/gyneocologist">Gynecologist</a></li>
+                <li><a routerLink="/nephrologist">Nephrologist</a></li>
+                <li><a routerLink="/hepatologist">Hepatologist (Liver)</a></li>
+                <li><a routerLink="/orthopaedic">Orthopaedic</a></li>
+              </ul>
+            </li>
+            <li><a routerLink="/physician">General Physician</a></li>
+
+            <li><a style="color:#fff">Hospital</a></li>
+            <li><a style="color:#fff">Speciality hospital</a></li>
+            <li><a style="color:#fff">Home Care</a></li>
+            <li><a style="color:#fff">Pharmacy</a></li>
+            <li><a style="color:#fff">Wellness</a></li>
+            <li><a style="color:#fff">Diagnostic lab</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" routerLink="/support">Support</a></li>
+        <li><a class="nav-link scrollto" routerLink="/aboutus">About us</a></li>
+        <li><a class="nav-link scrollto" routerLink="/partner-page">Partners</a></li>
+        <li><a class="nav-link scrollto" routerLink="/gallery">Gallery</a></li>
+        <li><a class="nav-link scrollto" routerLink="/faq" style="text-transform: none;">FAQs</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+     <a (click)="open_install_apk()" style="color:#fff;margin-left:40px;margin-top:5px;font-family: 'Roboto', sans-serif;font-weight: 420;"><img
+      src="assets/img/downloadPhone.png" width="27" height="27" style="font-size:10px;font-weight: 400;"
+      class="bi bi-phone">Download Medetel App</a>
+  </div>
+</header> 
+
+<!-- <a href="https://telemedpatapp.esdinfra.com/MEDETEL_Patient_App.apk" style="color:#fff;margin-left:40px;margin-top:5px;font-family: 'Roboto', sans-serif;font-weight: 420;"><img
+  src="assets/img/downloadPhone.png" width="27" height="27" style="font-size:10px;font-weight: 400;"
+  class="bi bi-phone">Download Medetel App</a> -->
+
+
+<!-- test.telemedicine.esdinfra.com -->
+
+ <!-- <header id="header" class="fixed-top">
+  <div class="container-fluid d-flex align-items-center">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto " routerLink="/homepage">Home</a></li>
+
+        <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Services</span><i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+             <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Specialities</span><i
+                  class="bi bi-chevron-right"></i></a>
+              <ul id="childUl">
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="refreshpage()">Cardiology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="page()">Dentistry</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="dermatologist()">Dermatology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="gastroentrologist()">Gastroenterology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="Gynecology()">Gynecology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="nephrologist()">Nephrology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="hepatologist()">Hepatology (Liver)</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="orthopaedic()">Orthopedic</a>
+
+
+                <li class="dropdown"><a id="myBtn">Cardiology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Cardiology is a branch of medicine that deals
+                        with disorders of the heart and the cardiovascular system. The field includes medical diagnosis
+                        and treatment of congenital<span id="dots">...</span><span id="more"> heart defects, coronary
+                          artery disease, heart failure, valvular heart disease and electrophysiology. Physicians who
+                          specialize in this field of medicine are called cardiologists.<br>
+                          Medetel Health has partnered with top cardiologist and cardiology hospitals in Karnataka and
+                          across India to provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore()" id="readMore">Read more</p>
+                     <button class="cardBtn"  (click)="refreshpage()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown"><a id="myBtn">Dentistry<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Dentistry, also known as dental medicine and oral
+                        medicine, is the branch of medicine focused on the teeth, gums, and mouth.<span
+                          id="dots2">...</span><span id="more2">
+                          It consists of the study, diagnosis, prevention, management, and treatment of diseases,
+                          disorders, and conditions of the mouth, most commonly focused on dentition (the development
+                          and arrangement of teeth) as well as the oral mucosa. The practitioner is called a dentist.
+                          <br>Medetel Health has partnered with top dentists and dental clinics in Karnataka and across
+                          India to provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore2()" id="readMore2">Read more</p>
+                      <a routerLink="/dentist"><button class="cardBtn" (click)="page()">Click Here >></button></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Dermatology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">The skin is the largest organ of the body, which
+                        acts as a barrier to protect the internal organs from injury and bacteria Dermatology involves
+                        the study, research, diagnosis, and<span id="dots3">...</span><span id="more3">
+                          management of any health conditions that may affect the skin, fat hair, nails, and membranes.
+                          A dermatologist is the health professional who specializes in this area of healthcare.
+                          <br>Medetel Health has partnered with top dermatologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore3()" id="readMore3">Read more</p>
+                     <button class="cardBtn" (click)="dermatologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Gastroenterology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Gastroenterology is the study of the normal
+                        function and diseases of the esophagus, stomach, small intestine, colon and rectum, pancreas,
+                        gallbladder, bile ducts and liver.<span id="dots4">...</span><span id="more4">
+                          It involves a detailed understanding of the normal action (physiology) of the gastrointestinal
+                          organs including the movement of material through the stomach and intestine (motility), the
+                          digestion and absorption of nutrients into the body, removal of waste from the system, and the
+                          function of the liver as a digestive organ.
+                          <br>Medetel Health has partnered with top gastroenterologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore4()" id="readMore4">Read more</p>
+                     <button class="cardBtn" (click)="gastroentrologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Gynecology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Gynecology is the area of medicine that involves
+                        the treatment of women's diseases, especially those of the reproductive organs. It is often
+                        paired with the field of obstetrics, forming <span id="dots5">...</span><span id="more5">
+                          the combined area of obstetrics and gynecology
+                          <br>Medetel Health has partnered with top gynecologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore5()" id="readMore5">Read more</p>
+                      <button class="cardBtn" (click)="Gynecology()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Nephrology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Nephrology is the branch of medicine that deals
+                        with the physiology and diseases of the kidneys. Nephrology is a specialty of adult internal
+                        medicine and pediatric medicine<span id="dots6">...</span><span id="more6">
+                          that concerns the study of the kidneys, specifically normal kidney function (renal physiology)
+                          and kidney disease (renal pathophysiology), the preservation of kidney health, and the
+                          treatment of kidney disease,
+                          <br>Medetel Health has partnered with top nephrologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore6()" id="readMore6">Read more</p>
+                          <button class="cardBtn"  (click)="nephrologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Hepatology (Liver)<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Hepatology is the branch of medicine that
+                        incorporates the study of liver, gallbladder, biliary tree, and pancreas as well as management
+                        of their disorders. Although traditionally<span id="dots7">...</span><span id="more7">
+                          considered a sub-specialty of gastroenterology, rapid expansion has led in some countries to
+                          doctors specializing solely on this area, who are called hepatologists.
+                          <br>Medetel Health has partnered with top Hepatologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore7()" id="readMore7">Read more</p>
+                     <button class="cardBtn"  (click)="hepatologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Orthopedic<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Orthopedics is the branch of surgery concerned
+                        with conditions involving the musculoskeletal system. Orthopedic surgeons use both surgical and
+                        nonsurgical means<span id="dots8">...</span><span id="more8">
+                          to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases,
+                          infections, tumors, and congenital disorders.
+                          <br>Medetel Health has partnered with top orthopedics in Karnataka and across India to provide
+                          quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore8()" id="readMore8">Read more</p>
+                    <button class="cardBtn" (click)="orthopaedic()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a routerLink="/clinicalservices">Clinical services</a></li>
+            <li class="dropdown">
+              <ul>
+              </ul>
+              </li>
+              <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Wellness</span><i
+                class="bi bi-chevron-right"></i></a>
+                <ul id="childUl">
+                  <li><a routerLink="/wellness">About wellness</a></li>
+                  <li><a >Wellness details</a></li>
+                </ul>
+            <li><a routerLink="/homecare">Home care</a></li>
+            <li><a routerLink="/healthpackages">Health Checkup Packages </a></li>
+            <li><a routerLink="/lab_test_packackes">Micro-scopic-Lab kit </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Register</span></a>
+          <ul>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/register">Patient</a></li>
+            <li><a href="https://forms.gle/qbFR3eipBWoJqv3u7">Doctor</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/register-clinic">Clinic</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/register-hospital">Hospital</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/register-speciality-hospital">Speciality hospital</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/homecare">Home Care</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/register-pharmacy">Pharmacy</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/wellness">Wellness</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/register-diagnostic-lab">Diagnostic lab</a></li>
+          </ul>
+        </li>&nbsp;
+        <span style="color:#fff;margin-top:-4px;margin-left:-2px;">|</span>
+        <li id="loginl" class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Login</span><i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/login">Patient</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/login-doctor">Doctor</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/login-clinic">Clinic</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/login-hospital">Hospital</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/login-speciality-hospital">Speciality hospital</a></li>
+            <li><a routerLink="/homecare">Home Care</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/login-pharmacy">Pharmacy</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/">Wellness</a></li>
+            <li><a href="https://telemedicineportal.esdinfra.com/#/auth/login-diagnostic-lab">Diagnostic lab</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" routerLink="/consultnow">Consult now</a></li>
+        <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Book an appointment</span> <i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li class="dropdown"><a style="color:#fff;cursor: pointer;">Doctor <i class="bi bi-chevron-right"></i></a>
+              <ul id="childUl">
+                <li><a routerLink="/cardiologist">Cardiologist</a></li>
+                <li><a routerLink="/dentist">Dentist</a></li>
+                <li><a routerLink="/dermatologist">Dermatologist</a></li>
+                <li><a routerLink="/gastroentrologist">Gastroenterologist </a></li>
+                <li><a routerLink="/gyneocologist">Gynecologist</a></li>
+                <li><a routerLink="/nephrologist">Nephrologist</a></li>
+                <li><a routerLink="/hepatologist">Hepatologist (Liver)</a></li>
+                <li><a routerLink="/orthopaedic">Orthopaedic</a></li>
+              </ul>
+            </li>
+            <li><a routerLink="/patient_quick_consult">General Physician</a></li>
+            <li><a style="color:#fff">Hospital</a></li>
+            <li><a style="color:#fff">Speciality hospital</a></li>
+            <li><a style="color:#fff">Home Care</a></li>
+            <li><a style="color:#fff">Pharmacy</a></li>
+            <li><a style="color:#fff">Wellness</a></li>
+            <li><a style="color:#fff">Diagnostic lab</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" routerLink="/support">Support</a></li>
+        <li><a class="nav-link scrollto" routerLink="/aboutus">About us</a></li>
+        <li><a class="nav-link scrollto" routerLink="/partner-page">Partners</a></li>
+        <li><a class="nav-link scrollto" routerLink="/gallery">Gallery</a></li>
+        <li><a class="nav-link scrollto" routerLink="/faq" style="text-transform: none;">FAQs</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <a (click)="open_install_apk()" style="color:#fff;margin-left:40px;margin-top:5px;font-family: 'Roboto', sans-serif;font-weight: 420;"><img
+      src="assets/img/downloadPhone.png" width="27" height="27" style="font-size:10px;font-weight: 400;"
+      class="bi bi-phone">Download Medetel App</a>
+  </div>
+</header> -->
+
+
+ <!-- <a href="https://telemedpatapp.esdinfra.com/MEDETEL_Patient_App.apk" style="color:#fff;margin-left:40px !important;margin-top:5px;font-family: 'Roboto', sans-serif;font-weight: 420;"><img
+        src="assets/img/downloadPhone.png" width="27" height="27" style="font-size:10px;font-weight: 400;"
+        class="bi bi-phone">Download Medetel App</a> -->
+
+
+<!-- online.medetel.in -->
+
+<!-- <header id="header" class="fixed-top">
+  <div class="container-fluid d-flex align-items-center">
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto " routerLink="/homepage">Home</a></li>
+
+        <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Services</span><i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Specialities</span><i
+                  class="bi bi-chevron-right"></i></a>
+              <ul id="childUl">
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="refreshpage()">Cardiology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="page()">Dentistry</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="dermatologist()">Dermatology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="gastroentrologist()">Gastroenterology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="Gynecology()">Gynecology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="nephrologist()">Nephrology</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="hepatologist()">Hepatology (Liver)</a>
+                <li class="dropdown"><a id="myBtnsmScreen" (click)="orthopaedic()">Orthopedic</a>
+
+
+                <li class="dropdown"><a id="myBtn">Cardiology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Cardiology is a branch of medicine that deals
+                        with disorders of the heart and the cardiovascular system. The field includes medical diagnosis
+                        and treatment of congenital<span id="dots">...</span><span id="more"> heart defects, coronary
+                          artery disease, heart failure, valvular heart disease and electrophysiology. Physicians who
+                          specialize in this field of medicine are called cardiologists.<br>
+                          Medetel Health has partnered with top cardiologist and cardiology hospitals in Karnataka and
+                          across India to provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore()" id="readMore">Read more</p>
+                     <button class="cardBtn"  (click)="refreshpage()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown"><a id="myBtn">Dentistry<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Dentistry, also known as dental medicine and oral
+                        medicine, is the branch of medicine focused on the teeth, gums, and mouth.<span
+                          id="dots2">...</span><span id="more2">
+                          It consists of the study, diagnosis, prevention, management, and treatment of diseases,
+                          disorders, and conditions of the mouth, most commonly focused on dentition (the development
+                          and arrangement of teeth) as well as the oral mucosa. The practitioner is called a dentist.
+                          <br>Medetel Health has partnered with top dentists and dental clinics in Karnataka and across
+                          India to provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore2()" id="readMore2">Read more</p>
+                      <a routerLink="/dentist"><button class="cardBtn" (click)="page()">Click Here >></button></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Dermatology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">The skin is the largest organ of the body, which
+                        acts as a barrier to protect the internal organs from injury and bacteria Dermatology involves
+                        the study, research, diagnosis, and<span id="dots3">...</span><span id="more3">
+                          management of any health conditions that may affect the skin, fat hair, nails, and membranes.
+                          A dermatologist is the health professional who specializes in this area of healthcare.
+                          <br>Medetel Health has partnered with top dermatologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore3()" id="readMore3">Read more</p>
+                     <button class="cardBtn" (click)="dermatologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Gastroenterology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Gastroenterology is the study of the normal
+                        function and diseases of the esophagus, stomach, small intestine, colon and rectum, pancreas,
+                        gallbladder, bile ducts and liver.<span id="dots4">...</span><span id="more4">
+                          It involves a detailed understanding of the normal action (physiology) of the gastrointestinal
+                          organs including the movement of material through the stomach and intestine (motility), the
+                          digestion and absorption of nutrients into the body, removal of waste from the system, and the
+                          function of the liver as a digestive organ.
+                          <br>Medetel Health has partnered with top gastroenterologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore4()" id="readMore4">Read more</p>
+                     <button class="cardBtn" (click)="gastroentrologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Gynecology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Gynecology is the area of medicine that involves
+                        the treatment of women's diseases, especially those of the reproductive organs. It is often
+                        paired with the field of obstetrics, forming <span id="dots5">...</span><span id="more5">
+                          the combined area of obstetrics and gynecology
+                          <br>Medetel Health has partnered with top gynecologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore5()" id="readMore5">Read more</p>
+                      <button class="cardBtn" (click)="Gynecology()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Nephrology<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Nephrology is the branch of medicine that deals
+                        with the physiology and diseases of the kidneys. Nephrology is a specialty of adult internal
+                        medicine and pediatric medicine<span id="dots6">...</span><span id="more6">
+                          that concerns the study of the kidneys, specifically normal kidney function (renal physiology)
+                          and kidney disease (renal pathophysiology), the preservation of kidney health, and the
+                          treatment of kidney disease,
+                          <br>Medetel Health has partnered with top nephrologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore6()" id="readMore6">Read more</p>
+                          <button class="cardBtn"  (click)="nephrologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Hepatology (Liver)<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Hepatology is the branch of medicine that
+                        incorporates the study of liver, gallbladder, biliary tree, and pancreas as well as management
+                        of their disorders. Although traditionally<span id="dots7">...</span><span id="more7">
+                          considered a sub-specialty of gastroenterology, rapid expansion has led in some countries to
+                          doctors specializing solely on this area, who are called hepatologists.
+                          <br>Medetel Health has partnered with top Hepatologist in Karnataka and across India to
+                          provide quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore7()" id="readMore7">Read more</p>
+                     <button class="cardBtn"  (click)="hepatologist()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a id="myBtn">Orthopedic<i class="bi bi-chevron-right"></i></a>
+                  <ul id="childUl2">
+                    <div class="triangle"></div>
+                    <li>
+                      <p style="text-align: justify;margin-top:-50px;">Orthopedics is the branch of surgery concerned
+                        with conditions involving the musculoskeletal system. Orthopedic surgeons use both surgical and
+                        nonsurgical means<span id="dots8">...</span><span id="more8">
+                          to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases,
+                          infections, tumors, and congenital disorders.
+                          <br>Medetel Health has partnered with top orthopedics in Karnataka and across India to provide
+                          quality healthcare to Anyone, Anywhere. To know more,</span></p>
+                      <p style="color:blue;cursor:pointer;" onclick="readMore8()" id="readMore8">Read more</p>
+                    <button class="cardBtn" (click)="orthopaedic()">Click Here >></button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a routerLink="/clinicalservices">Clinical services</a></li>
+            <li><a routerLink="/wellness">Wellness</a></li>
+            <li><a routerLink="/homecare">Home care</a></li>
+            <li><a routerLink="/healthpackages">Health Checkup Packages </a></li>
+            <li><a routerLink="/lab_test_packackes">Micro-scopic-Lab kit </a></li>
+
+          </ul>
+        </li>
+
+        <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Register</span></a>
+          <ul>
+            <li><a href="https://portal.medetel.in/#/auth/register">Patient</a></li>
+            <li><a href="https://forms.gle/qbFR3eipBWoJqv3u7">Doctor</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-clinic">Clinic</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-hospital">Hospital</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-speciality-hospital">Speciality hospital</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/homecare">Home Care</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-pharmacy">Pharmacy</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/wellness">Wellness</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/register-diagnostic-lab">Diagnostic lab</a></li>
+          </ul>
+        </li>&nbsp;
+        <span style="color:#fff;margin-top:-4px;margin-left:-2px;">|</span>
+        <li id="loginl" class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Login</span><i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="https://portal.medetel.in/#/auth/login">Patient</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-doctor">Doctor</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-clinic">Clinic</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-hospital">Hospital</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-speciality-hospital">Speciality hospital</a></li>
+            <li><a routerLink="/homecare">Home Care</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-pharmacy">Pharmacy</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/">Wellness</a></li>
+            <li><a href="https://portal.medetel.in/#/auth/login-diagnostic-lab">Diagnostic lab</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" routerLink="/consultnow">Consult now</a></li>
+        <li class="dropdown"><a style="color:#fff;cursor: pointer;"><span>Book an appointment</span> <i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li class="dropdown"><a style="color:#fff;cursor: pointer;">Doctor <i class="bi bi-chevron-right"></i></a>
+              <ul id="childUl">
+                <li><a routerLink="/cardiologist">Cardiologist</a></li>
+                <li><a routerLink="/dentist">Dentist</a></li>
+                <li><a routerLink="/dermatologist">Dermatologist</a></li>
+                <li><a routerLink="/gastroentrologist">Gastroenterologist </a></li>
+                <li><a routerLink="/gyneocologist">Gynecologist</a></li>
+                <li><a routerLink="/nephrologist">Nephrologist</a></li>
+                <li><a routerLink="/hepatologist">Hepatologist (Liver)</a></li>
+                <li><a routerLink="/orthopaedic">Orthopaedic</a></li>
+              </ul>
+            </li>
+            <li><a routerLink="/physician">General Physician</a></li>
+
+            <li><a style="color:#fff">Hospital</a></li>
+            <li><a style="color:#fff">Speciality hospital</a></li>
+            <li><a style="color:#fff">Home Care</a></li>
+            <li><a style="color:#fff">Pharmacy</a></li>
+            <li><a style="color:#fff">Wellness</a></li>
+            <li><a style="color:#fff">Diagnostic lab</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" routerLink="/support">Support</a></li>
+        <li><a class="nav-link scrollto" routerLink="/aboutus">About us</a></li>
+        <li><a class="nav-link scrollto" routerLink="/partner-page">Partners</a></li>
+        <li><a class="nav-link scrollto" routerLink="/gallery">Gallery</a></li>
+        <li><a class="nav-link scrollto" routerLink="/faq" style="text-transform: none;">FAQs</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <a (click)="open_install_apk()" style="cursor:pointer;color:#fff;margin-left:40px;margin-top:5px;font-family: 'Roboto', sans-serif;font-weight: 420;"><img
+      src="assets/img/downloadPhone.png" width="27" height="27" style="font-size:10px;font-weight: 400;"
+      class="bi bi-phone">Download Medetel App</a>
+  </div>
+</header> -->
+
+    
+<!-- <a>
+  <div class="dropdown_app">
+    <a class="dropbtn" style="cursor: pointer;color:#fff;margin-left:40px !important;margin-top:5px;font-family: 'Roboto', sans-serif;font-weight: 420;"><img
+      src="assets/img/downloadPhone.png" width="27" height="27" style="font-size:10px;font-weight: 400;"
+      class="bi bi-phone">Download Medetel App<i style="font-size: 12px;margin-left: 2px;" class="bi bi-chevron-down"></i></a>
+    <div class="dropdown-content_app">
+    <a (click)="open_install_apk(install_apk_patient)">Patient</a>
+    <a (click)="open_install_apk(install_apk_doctor)">Doctor</a>
+    </div>
+  </div>
+</a> -->

@@ -1,0 +1,182 @@
+<!-- <a routerLink="/consultnow"><img src="assets/img/logo.png" width="150" height="120"></a>
+
+    <div class="container" style="margin-top:-50px;" id="container">
+		<div class="form-container log-in-container">
+			<form [formGroup]="loginform" *ngIf="register">
+				<h4>Enter your login details</h4>
+				<mat-form-field>
+          <input matInput type="text" formControlName="username" placeholder="Username"  maxlength="10" minlength="10" />
+          <mat-error *ngIf="loginform.controls['username'].hasError('required')">Username is required</mat-error>
+          <mat-error
+            *ngIf="loginform.controls['username'].hasError('invalidName') || loginform.controls['username'].hasError('pattern')">
+            Please enter 10 digits number only for username
+          </mat-error>
+        </mat-form-field>
+		 <mat-form-field>
+          <!-- <mat-label>Username</mat-label> -->
+          <!-- <input matInput type="password" formControlName="password" placeholder="password" required>
+          <mat-error *ngIf="loginform.controls['password'].hasError('required')">password is required</mat-error>
+        </mat-form-field>
+        <a>
+          <a (click)="reset()"  style="color:rgb(9, 143, 238);cursor: pointer;  " >Forgot password?</a>
+        </a>
+			
+				<button style="background-color: #0b749c;" (click)="onSubmit()">Log In</button>
+              <span class="mt-2" style="font-size:12px;">By logging in, you agree to our <br><a routerLink="/termsconditions" style="font-size:12px;text-decoration: underline;">Terms and Conditions</a> & <a routerLink="/privacypolicy" style="font-size:12px;text-decoration: underline;">Privacy Policy</a>.</span>
+              <div class="d-flex">
+                <span style="margin-top: 13.5px;">New user? &nbsp;<a style="font-size:16px;color:rgb(9, 143, 238);cursor: pointer;" (click)="register=false" class="mt-3">Register here</a></span>
+              </div>
+			</form>
+            <form [formGroup]="Registerform" *ngIf="!register">
+				<h5>Enter your personal details</h5>
+        <mat-form-field>
+          <input type="text" matInput formControlName="PR_FirstName" placeholder="Name" required/>
+          <mat-error *ngIf="checkError('PR_FirstName', 'required')">Patient name is required
+          </mat-error>
+          <mat-error
+              *ngIf="Registerform.controls['PR_FirstName'].hasError('invalidName') || Registerform.controls['PR_FirstName'].hasError('pattern') ">
+              Please enter only alphabet </mat-error>
+        </mat-form-field>
+        <mat-form-field style="height: 90px !important;">
+          <input type="text" matInput formControlName="PR_MobileNumber" placeholder="Mobile Number"  pattern="[0-9]*" maxlength="10"  required/>
+          <mat-error *ngIf="Registerform.controls['PR_MobileNumber'].hasError('required')">Mobile number is required</mat-error>
+          <mat-error
+            *ngIf="Registerform.controls['PR_MobileNumber'].hasError('invalidName') || Registerform.controls['PR_MobileNumber'].hasError('pattern') ">
+            Please enter 10 digits mobile number 
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field style="height: 70px !important;">
+          <input type="text" matInput formControlName="PR_Email" placeholder="Eg: abc@gmail.com" required/>
+          <mat-error *ngIf="Registerform.controls['PR_Email'].hasError('required')">Please enter your email</mat-error>
+          <mat-error
+            *ngIf="Registerform.controls['PR_Email'].hasError('invalidName') || Registerform.controls['PR_Email'].hasError('pattern') ">
+           Please enter correct email adress
+          </mat-error>
+        </mat-form-field>
+        <div class="d-flex" style="margin-left:10px;">
+          <mat-form-field style="height: 70px !important;">
+            <input type="password" matInput formControlName="Password" placeholder="Password" required/>
+            <mat-error *ngIf="checkError('Password', 'required')">Password is required
+            </mat-error> -->
+            <!-- <mat-error                                
+            *ngIf="Registerform.controls['Password'].hasError('minlength')">                          
+            Password should have at least 6 characters
+        </mat-error>
+  
+            <mat-error
+                *ngIf="f['Password'].hasError('hasNonAlphanum')">Password must have at least one non-alphanumeric character
+            </mat-error>
+  
+            <mat-error 
+                *ngIf="f['Password'].hasError('hasCapitalCase')"> Passwords must have at least one uppercase letter
+            </mat-error>
+  
+               <mat-error 
+                *ngIf="f['Password'].hasError('hasSmallCase')"> Passwords must have at least one lowercase letter
+            </mat-error> -->
+          <!-- </mat-form-field><p 
+          [matTooltipPosition]="TooltipPosition"
+          matTooltip="Password should have at least 6 characters, 1 non-alpha numeric character, 1 uppercase letter, 1 lowercase letter"
+                                aria-label="Button that displays a tooltip when focused or hovered over">
+    <i class="bi bi-info-circle" style="cursor: pointer;"></i>
+  </p> -->
+  <!-- <i  matTooltip="Password should have at least 6 characters, one non-alphanumeric character, one uppercase letter, one lowercase letter" class="bi bi-info-circle mt-3 ml-3" style="cursor: pointer;" (click)="toggleStatus()"></i>
+        </div>
+       <div *ngIf="isShow">
+        <p style="font-size: 12px;color: rgb(255, 66, 66);">Password should have at least 6 characters, one non-alphanumeric character, one uppercase letter, one lowercase letter</p>
+       
+       </div>
+        <mat-form-field style="height: 70px !important;">
+          <input type="password" matInput formControlName="ConfirmPassword" placeholder="ConfirmPassword" required/>
+          <mat-error *ngIf="checkError('ConfirmPassword', 'required')">Please confirm your password
+          </mat-error>
+          <mat-error *ngIf="Registerform.controls['ConfirmPassword'].hasError('minLength')">Password should have atleast 6 characters</mat-error>
+              <mat-error *ngIf="f['ConfirmPassword'].hasError('matching')">
+                  Password does not match
+              </mat-error>
+        </mat-form-field>
+
+        <button class="mt-2"  (click)="SendOTP()" style="background-color: #0b749c;">Send OTP</button>
+                <div class="d-flex">
+                    <span style="margin-top: 5px;">Already registered?&nbsp;
+                
+
+                    
+                <p style="color:rgb(9, 143, 238);cursor: pointer;font-size:16px; margin-top: 2%;" (click)="register=true">Login</p></span>
+                </div> -->
+                
+        <!-- <input type="name" formControlName="PR_FirstName" required placeholder="Name" />
+        <input type="mobile" formControlName="PR_MobileNumber" placeholder="Mobile number" />
+        <input type="email" formControlName="PR_Email" placeholder="Email" />
+				<input type="text" formControlName="Password" placeholder="Password" />
+				<input type="text" formControlName="ConfirmPassword" placeholder="Confirm password" /> -->
+			<!-- </form>
+      
+		</div>
+        <hr style="rotate: 90deg;margin-top:130px;">
+		<div class="overlay-container">
+      <span routerLink="/consultnow" style="color:#7c7a7a;font-size:20px;font-weight: 800;margin-left:95%;margin-top:0px;cursor: pointer;">X</span>
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+          <section id="hero">
+            <div id="heroCarousel" data-bs-interval="40" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img src="assets/img/slide/doctor-visit.png" style="width:60% !important;height: 60%;">
+                  <br><h6 class="mt-3" style="color:#000">We offer high quality health care<br> through our verified doctors.</h6>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/slide/encrypted.png" style="width:60% !important;height: 60%;">
+                  <br><h6 class="mt-3" style="color:#000">All your consultations are<br> completely private and are<br> stored in a safe and<br> secure manner.</h6>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="assets/img/slide/online.png" style="width:60% !important;height: 60%;">       
+                   <br> <h6 class="mt-3" style="color:#000">Avoid queues and connect<br> to a doctor within<br> minutes.</h6>
+                  </div>       
+                  <div class="carousel-item">
+                  <img src="assets/img/slide/prescription.png" style="width:60% !important;height: 60%;">
+                 <br> <h6 class="mt-3" style="color:#000">Get a valid digital prescription<br> after the consultation.</h6>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/slide/wallet.png" style="width:60% !important;height: 60%;">
+                 <br> <h6 class="mt-3" style="color:#000">Reduce travel cost and time<br> by using Medetel Health.</h6>
+                </div>
+              </div>
+            </div>
+          </section> 
+				</div>
+			</div>
+		</div>
+	</div> --> 
+
+  <!-- <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+        <div class="slide">
+            <img src="assets/img/slide/banner5.png">
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="slide">
+            <img src="assets/img/slide/banner4.png">
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="slide">
+            <img src="assets/img/slide/banner3.png">
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="slide">
+            <img src="assets/img/slide/banner2.png">
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="slide">
+            <img src="assets/img/slide/banner1.png">
+        </div>
+    </ng-template>
+    <button class="owl-next">Next</button>
+	  <button class="owl-prev">Previous</button>
+</owl-carousel-o> -->
+
+

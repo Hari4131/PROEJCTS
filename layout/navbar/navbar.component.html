@@ -1,0 +1,2272 @@
+<div *ngIf="!isMobileView">
+  <div class="container">
+    <div class="container-fluid topbar-top" style="background-color: #ffffff;">
+      <div class="container" style="margin-right: 1%;">
+      <div class="d-flex justify-content-between topbar py-2">
+      <div style="margin-left: -6%;margin-top: 2%;">
+      <a href="index.html" class="navbar-brand">
+      <img src="assets/img/logos.png" width="220px" alt="" >
+      </a>
+      
+      
+      </div>
+      <div class="d-flex flex-column align-items-start text-white topbar-info"  style="font-size:medium;;">
+        <div  >
+
+          <div class="info-item mb-2" style="font-size:small;">
+            <span>Helpline No <i class="fas fa-phone-alt"></i></span> ::
+            <a href="tel:08026590420"  class="contact-link" >
+              
+              
+              8951680096, 9035867542
+            
+            
+            </a>
+        </div>
+        <div class="info-item mb-2" style="margin-top: -2%;font-size:small">
+            <span>Chat with us <i class="fas fa-comments"></i></span > :
+              <a href="https://api.whatsapp.com/send?phone=9035867542" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/whatsapp.png"  style="width: 26px;padding-left: 10px;">
+              </a>
+         
+        </div>
+        <div class="info-item mb-2" style="margin-top: -2%;font-size:small">
+            <span>Write to us <i class="fas fa-envelope"></i></span>
+            <a href="mailto: enquiry@aviationacademy.co.in" class="ms-2">
+              enquiry@aviationacademy.co.in
+            </a>
+        </div>
+        <div class="info-item mb-2" style="margin-top: -2%;font-size:small">
+            <span>Follow us on <i class="fas fa-share-alt"></i></span>
+            <a href="https://www.facebook.com/profile.php?id=61561767472186" class="ms-2" aria-label="Facebook">
+              
+              
+             <img src="assets/img/facebook.png" style="width: 20px;"> 
+            
+            
+            </a>
+           
+            <a  href="https://www.instagram.com/aviation.acdmy?igsh=Yzloazh0YTVlZGM4 " class="ms-2" aria-label="Instagram">
+              
+              <img src="assets/img/instagram.png" style="width: 16px;"> 
+            </a>
+            <!-- <a href="#" class="ms-2" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
+            <a href="https://www.youtube.com/channel/UCk26z5zB_8oXZhWMGdezRCA" class="ms-2" aria-label="WhatsApp">
+              
+              
+              <img src="assets/img/youtube-play.png" style="width: 20px;">
+            
+            </a>
+        </div>
+        </div>
+        
+    </div>
+    
+    
+      </div>
+      </div>
+  
+      </div> 
+  </div>
+   
+  </div>
+
+
+<div >
+  <header id="header" class="fixed-top" style="background-color:#e0e0e0;" >
+
+    <div class="container">
+      <div>
+
+       
+      </div>
+      <nav class="navbar navbar-default" role="navigation">
+        <div  style="margin-left: -4%;">
+          <ul>
+            <li class="home"> <a href="" > Home</a></li>
+            <li class="dropdown" >
+              <a href="#"  class="toggle" routerLink="/aboutus-page">about us  </a>
+
+              <ul class="dropdown-menus" style="background-color:#e0e0e0;" >
+                <li class="menu-link" >
+               <a href=""class="menu-link" routerLink="/vision&mission" >Mission & Vision</a>
+             
+                </li>
+                <li class="menu-link" >
+                
+                  <a  href=""   routerLink="/ourcommitment" >Our Commitment</a>
+
+   
+                   </li>
+                   <li class="menu-link" >
+                
+                    <a  href=""   routerLink="/ourmembers" >Advisory board</a>
+  
+     
+                     </li>
+                   <li class="menu-link" >
+                  
+                    <a  href=""   routerLink="/Learning_Methods" >Learning Methods</a>
+                    
+     
+                     </li>
+                     <li class="menu-link"  >
+                     
+                      <a  href=""  routerLink="/franchise" >Why Franchise with us?</a>
+                   
+       
+                       </li>
+                       <li class="menu-link"  >
+                    
+                        <a  href=""   routerLink="/location" >AA by Location</a>
+         
+                         </li>
+              </ul>
+              
+            </li>
+            <li class="dropdown"  style="padding-left:0%;margin-left: 1%;">
+              <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Program & Policy
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 0%;margin-top: 0%; background-color:  #ffffff;">
+      
+                
+                <div  style="width: 80%; background-color:  #ffffff;padding-bottom: 20%;">
+                  <div class="" >
+                    <div class="tab" >
+                      <button class="tablinks"  (mouseover)="openCity($event, 'London')"   (click)="cabin()"  style="font-size:small;font-weight: 500;">Cabin Crew &nbsp; 
+                        &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                        
+                        
+                        <span class="right-arrow" ></span></button>
+                      <button class="tablinks" (mouseover)="openCity($event, 'Paris')"  (click)="air()"style="font-size:small;font-weight: 500;">Air Cargo  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;
+                        &nbsp; &nbsp;  &nbsp;
+                        <span class="right-arrow" ></span> </button>
+                      <button class="tablinks" (click)="ground()" (mouseover)="openCity($event, 'Tokyo')" style="font-size:small;font-weight: 500;">Ground Handlers   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;
+                        
+                        
+                        <span class="right-arrow" ></span></button>
+                      <button class="tablinks"  (click)="ticket()" (mouseover)="openCity($event, 'air')" style="font-size:small;font-weight: 500;">Air Ticketing  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;
+                        &nbsp; &nbsp;  &nbsp;
+                        
+                        <span class="right-arrow"></span></button>
+                      <button class="tablinks"      (click)="os()" (mouseover)="openCity($event, 'operational')" style="font-size:small;font-weight: 500;">Operational&nbsp;Infrastructure <span class="right-arrow"></span></button>
+                      <button class="tablinks"    (click)="travel()" (mouseover)="openCity($event, 'travel')" style="font-size:small;font-weight: 500;">Travel & Tourism  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; <span class="right-arrow"></span></button>
+
+                      
+                    </div>
+                    
+                    <div id="London" class="tabcontent" style="background-color:  #ffffff;">
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;">
+
+
+  <li class="drop" style="padding-bottom: 25%; ">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -10%;"  >Corporate Communication & Business Management Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > E - Business Information Systems</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Cabin Crew Resources Management Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Aviation Indoctrination</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Customer Care & Emergency-Management skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Procedures</a>
+    
+    
+    </div>
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+  <li style="padding-left: 37%;background-color:  #ffffff;" class="drop" >
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >First Aid</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Aviation Law and Aircraft Rules and Regulations</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Soft Skills / Personality Development</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Self - Grooming Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Safety Procedures</a>
+    
+    
+    </div>
+   
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+
+                      </div>
+                    </div>
+                    
+                    <div id="Paris" class="tabcontent" style="background-color:  #ffffff;">
+                      <div class="col-md-4" style="display: flex;background-color:  #ffffff;">
+
+
+                        <li class="drop">
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > E  Business Information Systems</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Corporate Communication / Digital Fluency</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Brief History of Air Cargo</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Economics of Air Cargo</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Major Air Cargo Crafts and Their Features
+                            </a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Handling facility airport cargo activity & cargo zone</a>
+                          
+                          
+                          </div>
+                          <!-- <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+                          
+                          
+                          </div> -->
+                        </li>
+                        <li  class="drop" style="background-color:  #ffffff;margin-left: 35%;padding-bottom: 120%;">
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Dangerous goods regulations</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Key consideration to strengthen today's Cargo Values
+                              <br> Proposition</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Concept of AirCargo-Introduction-Basics of Air Cargo,
+                              <br>Including the Terminologies,main stakeholders ,
+                              <br>and business models</a>
+                          
+                          
+                          </div>
+                       
+                         
+                          <!-- <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+                          
+                          
+                          </div> -->
+                        </li>
+                      
+                                            </div>
+                    </div>
+                    
+                    <div id="Tokyo" class="tabcontent">
+                      <div class="col-md-4" style="display: flex;">
+
+
+                        <li class="drop">
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >International Phonetic Codes</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Geography & Codes</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > E-Business Information Systems</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Airline industry and its regulatory bodies</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Organisational structure of the airline industry</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Ground Handling Services</a>
+                          
+                          
+                          </div>
+                          <!-- <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+                          
+                          
+                          </div> -->
+                        </li>
+                        <li style="padding-left: 14%;" class="drop">
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Ground Support Equipment</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Ramp Services</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Importance of Safety and Security</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > They Learn Aviation Law and Aircraft rules and 
+                              <BR>Regulations</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Corporate Communication / Digital Fluency</a>
+                          
+                          
+                          </div>
+                         
+                          <!-- <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+                          
+                          
+                          </div> -->
+                        </li>
+                      
+                                            </div>
+                    </div>
+                    <div id="air" class="tabcontent">
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;">
+
+
+  <li class="drop"> 
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Corporate Coummunication & Business Management skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >E-Business Information Systems</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Digital Fluency</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >SABRE-Semi Automated Business Research Environment</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airport Codes,Airline Codes and Abbreviations</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Passenger Air Fares and Ticketing</a>
+    
+    
+    </div>
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+  <li style="padding-left: 27%;" class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Discounts,Taxes and Ticketing</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Documents required for Air Travel</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > AMADUES - Computer Reservation System</a>
+    
+    
+    </div>
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Self - Grooming Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Safety Procedures</a>
+    
+    
+    </div> -->
+   
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+
+                      </div>
+
+                    
+                    </div>
+                    <div id="operational" class="tabcontent">
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;">
+
+
+  <li class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Corporate Communication & Business Management Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > E - Business Information Systems</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Digital Fluency</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Airport Infrastructure</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Air Traffic Management</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Ground Operations</a>
+    
+    
+    </div>
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+  <li style="padding-left: 27%;" class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Baggage Services
+      </a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Fuel</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Technical Operations</a>
+    
+    
+    </div>
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Self - Grooming Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Safety Procedures</a>
+    
+    
+    </div> -->
+   
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+
+                      </div>
+                    </div>
+                    <div id="travel" class="tabcontent" style="padding-bottom: 120%">
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;;">
+
+
+  <li class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Commercial Aviation & Airlines Terminal Management</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Travel Documents</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Travel Agent Management</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Tourism Managemnt</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Tourism Concepts,Principles and Practices</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Roles of Goverment</a>
+    
+    
+    </div>
+   <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Knowledge of Geograpghy and its linkages and
+        <br> anthropological 
+      aspects of tourism</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Tourism planning-Deatil picture on various types ,
+        <br>and various planning consideration</a>
+    
+    
+    </div> 
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >A Deatiled outlook on the role of ICT in tourism</a>
+    
+    
+    </div> 
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Human Resources Management in Tourism</a>
+    
+    
+    </div> 
+  </li>
+  <li style="padding-left: 27%;" class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Study of Tourism Organisation
+      </a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Approval of Tour Operators and Travel Agents</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Travel Business</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Geographical aspects of tourism</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Domestic tourist destinations in india</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Airline Ticketing</a>
+    
+    
+    </div>
+   
+     <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Various impacts of tourism</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Develop skills for Procedures and Practices</a>
+    
+    
+    </div> 
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Information Communication Technology & Tourism</a>
+    
+    
+    </div> 
+  </li>
+
+                      </div>
+                    </div>
+                    
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+            <li class="nav-item dropdown" style="padding-left:0%;margin-left: 1%;">
+              <a    class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Courses
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-right: 500px;margin-top: 0%">
+      
+                
+                <div class="container" >
+                  <div class="" >
+                    <div class="tab">
+                      <button class="tablinks" (mouseover)="openCitys($event, 'certificate')" style="font-size:small;font-weight: 500">Certificates &nbsp; &nbsp;  &nbsp; &nbsp;   <span class="right-arrow"></span></button>
+                      <button class="tablinks" (mouseover)="openCitys($event, 'dipoma')" style="font-size:small;font-weight: 500">Diploma  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;<span class="right-arrow"></span></button>
+                      <button class="tablinks" (mouseover)="openCitys($event, 'Subject')" style="font-size:small;font-weight: 500">Subject Areas  <span class="right-arrow"  ></span></button>
+                      
+                      <!-- <button class="tablinks" (mouseover)="openCitys($event, 'Assessment')" style="font-size:small;">Assessment/Examinations</button>
+                      <button class="tablinks" (mouseover)="openCitys($event, 'Delivery')" style="font-size:small;">Delivery Methods</button>
+                      <button class="tablinks" (mouseover)="openCitys($event, 'Training')" style="font-size:small;">Training Partners</button> -->
+                    </div>
+                    
+                    <div id="certificate" class="tabcontent" >
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;">
+
+
+  <li class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Cabin Crew</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Airport Ground Staff</a>
+    
+    
+    </div>
+   <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Breif History of Air Cargo</a>
+    
+    
+    </div>  -->
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airport Ticketing</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Air Cargo Management</a>
+    
+    
+    </div>
+     <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Air Operations</a>
+    
+    
+    </div>  -->
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+  <!-- <li style="padding-left: 7%;">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >First Aid</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Aviation Law and Aircraft Rules and Regulations</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Soft Skills / Personality Development</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Self - Grooming Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Safety Procedures</a>
+    
+    
+    </div>
+   
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  <!-- </li> --> 
+
+                      </div>
+                    </div>
+                    
+                    <div id="dipoma" class="tabcontent" >
+                      <div class="col-md-4" style="display: flex;">
+
+
+                        <li class="drop">
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Aviation , Hospitality & Tourism Management</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item" style="margin-top: 7%;">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Hospitality, Travel & Customer Services</a>
+                          
+                          
+                          </div>
+                          <!-- <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Corporate Communication / Digital Fluency</a>
+                          
+                          
+                          </div> -->
+                       
+                      
+                                            </div>
+                    </div>
+                    
+                    <div id="Subject" class="tabcontent">
+                      <div class="col-md-4" style="display: flex;">
+
+
+                        <li class="drop">
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Customer Services Management</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Hospitality & Tourism Courses</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Travel & Tourism Courses</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Security & Safety Courses</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Air Fare & Ticketing courses</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Logistics Courses</a>
+                          
+                          
+                          </div>
+                          <!-- <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+                          
+                          
+                          </div>
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+                          
+                          
+                          </div> -->
+                        </li>
+                        <li style="padding-left: 27%;" class="drop">
+                          <div class="grid-item">
+                            
+                            
+                            
+                            <a style="color: black;font-size: small; margin-left: -7%;"  >Ground Operations</a>
+                          
+                          
+                          </div>
+                      
+                    
+                    <!-- /.col-md-4  -->
+                        </li>
+                      </div>
+                    </div>
+                    <div id="Assessment" class="tabcontent">
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;">
+
+
+  <li class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Supervised Exams</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Classroom Exams</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Weekly Assessments</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Practical Classes
+      </a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Projects / Presentations</a>
+    
+    
+    </div>
+    
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+  <!-- <li style="padding-left: 7%;">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >First Aid</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Aviation Law and Aircraft Rules and Regulations</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Soft Skills / Personality Development</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Self - Grooming Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Safety Procedures</a>
+    
+    
+    </div>
+   
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  <!-- </li> --> 
+
+                      </div>
+                    </div>
+                    <div id="Delivery" class="tabcontent">
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;">
+
+
+  <li class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Digital Training</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Instructor - Led - Campus Learning Environment</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Industry Experience & Academic Excellence Faculty</a>
+    
+    
+    </div>
+   
+    
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+  <!-- <li style="padding-left: 7%;">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >First Aid</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Aviation Law and Aircraft Rules and Regulations</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Soft Skills / Personality Development</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Self - Grooming Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Safety Procedures</a>
+    
+    
+    </div>
+   
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  <!-- </li> --> 
+
+                      </div>
+                    </div>
+                    <div id="Training" class="tabcontent">
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;">
+
+
+  <li class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Authorized Training Centers</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Authorized Training Partners</a>
+    
+    
+    </div>
+   
+   
+    
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+  <!-- <li style="padding-left: 7%;">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >First Aid</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Aviation Law and Aircraft Rules and Regulations</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Soft Skills / Personality Development</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Self - Grooming Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Safety Procedures</a>
+    
+    
+    </div>
+   
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  <!-- </li> --> 
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+        
+           <li class="nav-item dropdown" style="padding-left:1%;margin-left: -2%;">
+              <a    class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+training
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="padding-right: 500px;margin-top: 0%">
+      
+                
+                <div class="container" style="width: 145%;">
+                  <div class="" >
+                    <div class="tab">
+                      <div >
+
+                        <button class="tablinks" (mouseover)="openCityss($event, 'Assessments')" style="font-size:small;font-weight: 500">Assessment/Examinations  <span class="right-arrow" ></span> </button>
+                        <button class="tablinks" (mouseover)="openCityss($event, 'Deliverys')" style="font-size:small;font-weight: 500">Delivery Methods <span class="right-arrow" ></span></button>
+                        <button class="tablinks" (mouseover)="openCityss($event, 'Trainings')" style="font-size:small;font-weight: 500">Training Partners <span class="right-arrow"></span></button> 
+                      </div>
+                      <!-- <button class="tablinks" (mouseover)="openCitys($event, 'certificate')" style="font-size:small;">Certificates</button>
+                      <button class="tablinks" (mouseover)="openCitys($event, 'dipoma')" style="font-size:small;">Diploma</button>
+                      <button class="tablinks" (mouseover)="openCitys($event, 'Subject')" style="font-size:small;">Subject Areas</button> -->
+                    
+                    </div>
+                    
+                 
+                    <div id="Assessments" class="tabcontent">
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;">
+
+
+  <li class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Supervised Exams</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Classroom Exams</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Weekly Assessments</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Practical Classes
+      </a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Projects / Presentations</a>
+    
+    
+    </div>
+    
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+  <!-- <li style="padding-left: 7%;">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >First Aid</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Aviation Law and Aircraft Rules and Regulations</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Soft Skills / Personality Development</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Self - Grooming Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Safety Procedures</a>
+    
+    
+    </div>
+   
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  <!-- </li> --> 
+
+                      </div>
+                    </div>
+                    <div id="Deliverys" class="tabcontent">
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;">
+
+
+  <li class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Digital Training</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Instructor - Led - Campus Learning Environment</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Industry Experience & Academic Excellence Faculty</a>
+    
+    
+    </div>
+   
+    
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+  <!-- <li style="padding-left: 7%;">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >First Aid</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Aviation Law and Aircraft Rules and Regulations</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Soft Skills / Personality Development</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Self - Grooming Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Safety Procedures</a>
+    
+    
+    </div>
+   
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  <!-- </li> --> 
+
+                      </div>
+                    </div>
+                    <div id="Trainings" class="tabcontent">
+                      <!-- <h3>London</h3>
+                      <p>London is the capital city of England.</p> -->
+                      <div class="col-md-4" style="display: flex;">
+
+
+  <li class="drop">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Authorized Training Centers</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Authorized Training Partners</a>
+    
+    
+    </div>
+   
+   
+    
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  </li>
+  <!-- <li style="padding-left: 7%;">
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >First Aid</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Aviation Law and Aircraft Rules and Regulations</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Soft Skills / Personality Development</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Self - Grooming Skills</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Airline Safety Procedures</a>
+    
+    
+    </div>
+   
+    <!-- <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  > Emergency Equipment's</a>
+    
+    
+    </div>
+    <div class="grid-item">
+      
+      
+      
+      <a style="color: black;font-size: small; margin-left: -7%;"  >Food & Beverages Services</a>
+    
+    
+    </div> -->
+  <!-- </li> --> 
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  /.container  -->
+      
+      
+              </div>
+            </li>
+           
+
+            <li class="home"  style="padding-left: 2%;"> <a  href=""  routerLink="/Aviation" > admission</a></li>
+          
+            <li class="dropdown" >
+              <a href="#"  class="toggle">Events  </a>
+
+              <ul class="dropdown-menus" style="background-color:#e0e0e0; margin-left: 530px;">
+                <li class="menu-link" >
+               <a href=""class="menu-link"  style="padding-left: 20%;"routerLink="/news&events" >News & Events</a>
+             
+                </li>
+                <li class="menu-link" >
+                
+                  <a  href=""   routerLink="/AviationPhotos" style="padding-left: 20%;" >Aviation Photos</a>
+
+   
+                   </li>
+                   <li class="menu-link" >
+                
+                    <a  href=""   routerLink="/AviationVideos" style="padding-left: 20%;" >Aviation Videos</a>
+  
+     
+                     </li>
+  
+
+              </ul>
+              
+            </li>
+            <li  class="home"style="padding-left: 1%;"> <a  href=""> services</a></li>
+            <li class="home" style="padding-left: 2%;"> <a href=""  routerLink="/carrers"> careers</a></li>
+            <li  class="home" style="padding-left: 2%;"> <a  href="" routerLink="/Franchises"> franchises</a></li>
+            <li  class="home" style="padding-left: 2%;"> <a  href="" routerLink="/enquiry-form"> Enquiry</a></li>
+            <li class="home"  style="padding-left: 2%;"> <a  href=""  routerLink="/contactus" > contact&nbsp;us</a></li>
+          </ul>
+          <div >
+          
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </div>
+  </header>
+  <div *ngIf="isMobileView">
+
+    <div class="container">
+      <div class="container-fluid topbar-top" style="background-color: #ffffff;">
+        <div class="container" style="margin-left: 13%;">
+        <div class="d-flex justify-content-between topbar py-2">
+        <div >
+        <a href="index.html" class="navbar-brand">
+        <img src="assets/img/logos.png" width="220px" alt="" >
+        <div class ="sucess">
+          <p >Your Path to the Sky</p>
+        </div>
+        </a>
+        
+        
+        </div>
+    
+      
+        </div>
+        </div>
+    
+        </div> 
+    </div>
+  <div>
+  
+    
+  </div>
+  
+    <div class="toggle-button" (click)="toggleSidebar()">
+      &#9776;
+
+    
+
+    </div>
+
+   
+    <div class="sidebar" [class.active]="isSidebarVisible">
+      <ul class="sidebar-items">
+     <div class="logo-container">
+  <a routerLink="/homepage" class="logo me-auto">
+    <img src="assets/img/logos.png" style="width: 190px;" />
+  </a>
+  <div class="sucess_MOB">
+    <p>Your Path to the Sky</p>
+  </div>
+</div>
+
+    
+  <hr class="divider">
+
+    <li><a routerLink="/homepage" (click)="navigateAndCloseSidebar('/homepage')">Home</a></li>
+   <li>
+  <button class="dropdown-btn" (click)="toggleAboutDropdown()">
+    About Us
+    <i class="fa fa-caret-down" style="float: right;"></i>
+  </button>
+  <ul class="dropdown-container" [ngClass]="{ 'show': isAboutDropdownOpen }">
+    <li>
+      <a (click)="navigateAndCloseSidebar('/aboutus-page')">About Us</a>
+    </li>
+    <li>
+      <a (click)="navigateAndCloseSidebar('/vision&mission')">Mission & Vision</a>
+    </li>
+    <li>
+      <a (click)="navigateAndCloseSidebar('/ourmembers')">Advisory Board</a>
+    </li>
+      <li>
+      <a (click)="navigateAndCloseSidebar('/Learning_Methods')">Learning Methods</a>
+    </li>
+      <li>
+      <a (click)="navigateAndCloseSidebar('/franchise')">Why Franchise With us?</a>
+    </li>
+      <li>
+      <a (click)="navigateAndCloseSidebar('/location')">AA by Location</a>
+    </li>
+  </ul>
+</li>
+  <li>
+  <button class="dropdown-btn" (click)="toggleAboutDropdowns()">
+Programme & Policy
+    <i class="fa fa-caret-down" style="float: right;"></i>
+  </button>
+  <ul class="dropdown-container" [ngClass]="{ 'show': isAboutDropdownOpens }">
+    <li>
+      <a (click)="navigateAndCloseSidebar('/cabincrews')">Cabin Crews</a>
+    </li>
+    <li>
+      <a (click)="navigateAndCloseSidebar('/aircargo')">Air Cargo</a>
+    </li>
+    <li>
+      <a (click)="navigateAndCloseSidebar('/GroundHandlers')">Ground Handlers</a>
+    </li>
+      <li>
+      <a (click)="navigateAndCloseSidebar('/Learning_Methods')">Air Ticketing</a>
+    </li>
+       <li>
+      <a (click)="navigateAndCloseSidebar('/Operationalstructure')">Operationalstructure</a>
+    </li>
+       <li>
+      <a (click)="navigateAndCloseSidebar('/Travel&Tourism')">Travel&Tourism</a>
+    </li>
+    
+  </ul>
+</li>
+<!-- 
+    <li><a routerLink="/programs" (click)="navigateAndCloseSidebar('/programs')">Programs</a></li>
+    <li><a routerLink="/policy" (click)="navigateAndCloseSidebar('/policy')">Policy</a></li> -->
+    <!-- <li><a routerLink="/courses" (click)="navigateAndCloseSidebar('/courses')">Courses</a></li> -->
+
+     <li>
+  <button class="dropdown-btn" (click)="toggleAboutcourse()">
+Courses
+    <i class="fa fa-caret-down" style="float: right;"></i>
+  </button>
+  <ul class="dropdown-container" [ngClass]="{ 'show': isAboutDropdowncourse }">
+    <li>
+      <a (click)="navigateAndCloseSidebar('/certificates')">Certificate</a>
+    </li>
+    <li>
+      <a (click)="navigateAndCloseSidebar('/Dipolamacourses')">Diploma</a>
+    </li>
+    <li>
+      <a (click)="navigateAndCloseSidebar('/subjectareas')">Subject Areas</a>
+    </li>
+   
+    
+  </ul>
+</li>
+       <li>
+  <button class="dropdown-btn" (click)="toggleAboutass()">
+Training
+    <i class="fa fa-caret-down" style="float: right;"></i>
+  </button>
+  <ul class="dropdown-container" [ngClass]="{ 'show': isAboutDropass }">
+    <li>
+      <a (click)="navigateAndCloseSidebar('/assesments')">Assessment/Examinations</a>
+    </li>
+    <li>
+      <a (click)="navigateAndCloseSidebar('/diplomamethods')">Delivery Methods</a>
+    </li>
+    <li>
+      <a (click)="navigateAndCloseSidebar('/Trainingpartners')"> Training Partners</a>
+    </li>
+   
+    
+  </ul>
+</li>
+    <li><a routerLink="/aviation" (click)="navigateAndCloseSidebar('/Aviation')">Admission</a></li>
+ <li>
+  <button class="dropdown-btn" (click)="togglegallery()">
+Gallery
+    <i class="fa fa-caret-down" style="float: right;"></i>
+  </button>
+  <ul class="dropdown-container" [ngClass]="{ 'show': isAboutgal }">
+    <li>
+      <a (click)="navigateAndCloseSidebar('/news&events')">News&Events</a>
+    </li>
+    <li>
+      <a (click)="navigateAndCloseSidebar('/AviationPhotos')">Aviation Photos</a>
+    </li>
+    <li>
+      <a (click)="navigateAndCloseSidebar('/AviationVideos')"> Aviation Videos</a>
+    </li>
+   
+    
+  </ul>
+</li>
+    <li><a routerLink="/services" (click)="navigateAndCloseSidebar('/homepage')">Services</a></li>
+    <li><a routerLink="/carrers" (click)="navigateAndCloseSidebar('/carrers')">Careers</a></li>
+    <li><a routerLink="/franchise" (click)="navigateAndCloseSidebar('/Franchises')">Franchise</a></li>
+    <li><a routerLink="/enquiry-form" (click)="navigateAndCloseSidebar('/enquiry-form')">Enquiry</a></li>
+    <li><a routerLink="/contactus" (click)="navigateAndCloseSidebar('/contactus')">Contact Us</a></li>
+  </ul>
+
+<li style="list-style: none; text-align: center; padding: 15px 0;">
+  <!-- Follow Us Title -->
+  <p style="font-weight: bold; font-size: 14px; margin-bottom: 10px; text-decoration: underline; text-decoration-color: red;">
+    FOLLOW US ON:
+  </p>
+
+  <!-- Social Icons -->
+  <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 10px;">
+    <a href="https://api.whatsapp.com/send?phone=9035867542" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp" style="font-size: 22px; color: #25D366;"></i>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61561767472186" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook" style="font-size: 22px; color: #1877F2;"></i>
+    </a>
+    <a href="https://www.instagram.com/aviation.acdmy?igsh=Yzloazh0YTVlZGM4" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram" style="font-size: 22px; color: #C13584;"></i>
+    </a>
+  </div>
+
+  <!-- Helpline Numbers -->
+  <div style="font-size: 14px; color: #333; margin-bottom: 10px;">
+    <p style="margin: 5px 0;"><strong>Helpline No:</strong></p>
+    <p style="margin: 0;">
+      <a href="tel:8594033651" style="color: inherit; text-decoration: none;">8594033651</a>
+    </p>
+    <p style="margin: 0;">
+      <a href="tel:9035867542" style="color: inherit; text-decoration: none;">9035867542</a>
+    </p>
+  </div>
+
+  <!-- Email -->
+  <div style="font-size: 14px; color: #333;">
+    <p style="margin: 5px 0;"><strong>Email:</strong></p>
+    <p style="margin: 0;">
+      <a href="mailto:enquiry@aviationacademy.co.in" style="color: inherit; text-decoration: none;">
+        enquiry@aviationacademy.co.in
+      </a>
+    </p>
+  </div>
+</li>
+
+
+
+
+  
+  
+    </div>
+
+  </div>
+
+</div>
+

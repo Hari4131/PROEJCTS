@@ -1,0 +1,252 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    // border-radius: 8px;
+    // box-shadow: 0 9px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    color: #19459d;
+    margin-bottom: 20px;
+  }
+  
+  
+  .subtitle {
+    color: #19459d;
+    margin-top: 20px;
+  }
+  
+  .advantage {
+    margin-bottom: 20px;
+  }
+  
+  .advantage h3 {
+    color: #ed1f24;
+  }
+  
+  .advantage ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .advantage ul li {
+    margin-bottom: 10px;
+  }
+  .p{
+    padding: 20px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10%;
+  }
+  .mat{
+    border-radius: 8px;
+    box-shadow: 0 9px 30px rgba(0, 0, 0, 0.2);
+  }
+  /* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px; /* Reduce padding */
+  }
+
+  .title {
+      font-size: 24px; /* Adjust font size */
+      margin-bottom: 15px; /* Reduce margin */
+  }
+
+  .subtitle {
+      font-size: 20px; /* Adjust font size */
+      margin-top: 15px; /* Reduce margin */
+  }
+
+  .advantage h3 {
+      font-size: 18px; /* Adjust font size */
+  }
+
+  .p {
+      padding: 10px; /* Reduce padding */
+      font-size: medium; /* Adjust font size */
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.marquee {
+  position: fixed;
+  top: 80%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.fixed-button {
+  font-family: 'proxima-nova', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    //padding: 12px 35px;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  display: block;
+  margin-left: -45%;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.fixed-button:hover {
+  background-color: #0056b3;
+}
+@keyframes marquee {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
+@media (max-width: 768px) {
+.mat
+{
+  width: 80%;;
+margin-left: 8%;
+}
+.title
+{
+  margin-left: 8%;
+  font-size: medium;
+}
+.subtitle
+{
+  margin-left: 8%;
+  font-size: medium;
+}
+.Growing
+{
+  margin-left: 8%;
+  font-size: medium;
+}
+
+.low
+{
+  margin-left: 8%;
+  font-size: medium;
+}
+.edge
+{
+  margin-left: 8%; 
+  font-size: medium;
+}
+}
+////
+/// 
+///
+ .card-title {
+color: #19459d;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.mind-img {
+  width: 150px;  /* Set the desired width */
+  height: 140px;
+margin-left: 43%;
+margin-top: 3%;
+
+}
+.marquee {
+  position: fixed;
+  top: 80%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.fixed-button {
+  font-family: 'proxima-nova', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    //padding: 12px 35px;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  display: block;
+  margin-left: -45%;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.fixed-button:hover {
+  background-color: #0056b3;
+}
+@keyframes marquee {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .branc
+  {
+    margin-left: -16%;
+  }
+ .card
+ {
+  width: 70%;
+margin-left: 16%;
+ }
+}
+@media (max-width: 576px) {
+  .embed-responsive-item {
+   width: 260px;
+    //padding-top: 5.25%; /* Aspect ratio for 16:9 on very small screens */
+  }
+
+  @media (max-width: 425px) {
+    .mind-img {
+      max-width: 150px; 
+      margin-left: 120px;/* Adjust the size for tablets */
+    }
+    .branc
+    {
+      margin-left: -28px;
+      font-size: 200%;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .mind-img {
+      max-width: 150px; 
+      margin-left: 120px;/* Adjust the size for tablets */
+    }
+  }
+
+  @media (max-width: 375px) {
+    .mind-img {
+      max-width: 150px; 
+      margin-left: 120px;/* Adjust the size for tablets */
+    }
+  }
+  .branc
+  {
+    margin-left: 6%;
+  }
+}

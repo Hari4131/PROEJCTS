@@ -1,0 +1,261 @@
+img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .disc{
+    font-size: small;
+    font-weight: 600
+
+  }
+  //
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    animation: zoomIn 1s ease-in-out forwards;
+  }
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1); /* Adjust the scale value as needed */
+    }
+  }
+  .image-hover-effect {
+    transition: transform 0.3s ease;
+  }
+
+  .image-hover-effect:hover {
+    transform: scale(1.1); /* Zooms the image by 10% */
+  }
+  //
+
+  .our
+  {
+    padding-top: 40px;
+   // padding-left: 590px;
+   margin-left: 43%;
+
+    color: rgb(255, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-underline-offset: 14px;
+  }
+  .font
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 2%;
+    color: rgb(0, 26, 255);
+
+  }
+  .fonts
+  {
+    color: rgb(255, 0, 0);
+  }
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .zoom-in {
+    animation: zoomIn 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInFromTop {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-top {
+    opacity: 0;
+    animation: fadeInFromTop 8.7s ease-out forwards;
+  }
+  
+  //
+
+  @media (max-width: 768px) {
+    .zoom-in .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .zoom-in .col-md-4 {
+      max-width: 100%;
+      margin-bottom: 1.5em;
+    }
+  .our{
+    margin-left: 42%;
+  }
+    .zoom-in img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .font {
+      font-size:xx-small
+    }
+ 
+  
+    .fonts {
+      font-size:xx-small/* Smaller size for mobile */
+    }
+  
+    .disc {
+      font-size:xx-small /* Smaller size for mobile */
+    }
+  }
+
+  @media (max-width: 425px) {
+    .zoom-in .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .zoom-in .col-md-4 {
+      max-width: 100%;
+      margin-bottom: 1.5em;
+    }
+  .our{
+margin-left: 47%;
+font-size: medium;
+  }
+    .zoom-in img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .font {
+      font-size: 1em;
+    }
+  }
+ 
+  @media (max-width: 375px) {
+    .zoom-in .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .zoom-in .col-md-4 {
+      max-width: 100%;
+      margin-bottom: 1.5em;
+    }
+    .our{
+      margin-left: 32%;
+      font-size: medium;
+        }
+    .zoom-in img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .font {
+      font-size: 1em;
+    }
+  }
+
+  //
+  @media (max-width: 390px) {
+    .zoom-in .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .zoom-in .col-md-4 {
+      max-width: 100%;
+      margin-bottom: 1.5em;
+    }
+    .our{
+      margin-left: 39%;
+      font-size: medium;
+        }
+    .zoom-in img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .font {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .zoom-in .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .zoom-in .col-md-4 {
+      max-width: 100%;
+      margin-bottom: 1.5em;
+    }
+    .our{
+      margin-left: 39%;
+      font-size: medium;
+        }
+    .zoom-in img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .font {
+      font-size: 1em;
+    }
+  }
+
+  .App {
+    text-align: center;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  }
+  
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+  
